@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "es-CR"
-title                    : "Cyb34r"
+title                    : "Cyb3ar"
 title_separator          : "-"
-name                     : "Cyb34r"
+name                     : "Cyb3ar"
 description              : ""
-url                      : "https://cyb34r.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://cyb3ars.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "cyb34r/cyb34r.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "cyb3ars/cyb3ars.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "assets/images/SiteLogo.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Cyb34r"
+  name             : "Cyb3ar"
   avatar           : "/assets/images/avatar.png"
   bio              : "Master en Ciberseguridad, Hacker Ético, Pentester, CTFs, Certificaciones: TÜV Rheinland-ISO 27001, CRTA, CTPS<br>HackTheBox"
   location         : "Costa Rica"
