@@ -14,7 +14,6 @@ tags:
   - permissions
 ---
 
-# Levantar la Maquina: 
 
 Para levantar la maquina debemos bajar la maquina de [DockerLabs - Injection ](https://dockerlabs.es/)
 Posterior a la descarga de la maquina en nuestro equipo debemos correr el siguiente comando:

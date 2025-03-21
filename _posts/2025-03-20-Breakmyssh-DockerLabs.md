@@ -15,8 +15,6 @@ tags:
   - SSH Brute Force
 ---
 
-# Levantar la Maquina: 
-
 Para levantar la maquina debemos bajar la maquina de [DockerLabs - Trust ](https://dockerlabs.es/)
 Posterior a la descarga de la maquina en nuestro equipo debemos correr el siguiente comando:
 
