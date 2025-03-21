@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Injection
+title: Trust
 date: 2025-03-19
 classes: wide
 header:
@@ -9,9 +9,10 @@ categories:
   - DockerLabs
   - VeryEasy
 tags:
-  - sql-injection
+  - Fuzzing
+  - Web
   - enumeration
-  - permissions
+  - SSH Brute Force
 ---
 
 # Levantar la Maquina: 
