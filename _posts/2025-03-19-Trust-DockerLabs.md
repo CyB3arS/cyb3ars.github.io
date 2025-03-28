@@ -7,7 +7,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/Injection/Banner.png
+  path: /assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Banner.png
   alt: 
 
 machine: Trust
