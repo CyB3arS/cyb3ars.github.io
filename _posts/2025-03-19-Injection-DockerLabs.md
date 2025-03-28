@@ -29,7 +29,7 @@ unzip {{page.machine}}.zip
 - Procedemos a iniciar maquina {{page.machine}} con el siguiente comando:
 
 ```bash
-#Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
+#Con esto damos permisos de ejecución al archivo encargado de desplegarnos la máquina.
 sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
 sudo bash auto_deploy.sh {{page.machine}}.tar
@@ -47,7 +47,7 @@ sudo bash auto_deploy.sh {{page.machine}}.tar
 
 ## Reconocimiento y Enumeración
 
-Para iniciar con esta maquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
+Para iniciar con esta máquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
 
 ```bash
 ping -c 1 172.17.0.2
@@ -57,7 +57,7 @@ Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia 
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Ping.png)
 
-Ahora que sabemos que el equipo esta activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
+Ahora que sabemos que el equipo este activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
 
 ```bash
 nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 172.17.0.2
@@ -113,15 +113,15 @@ Vemos que nos encuentra el archivo index.php por ello vamos en el navegador a ve
 
 ## Explotación 
 
-Al ingresar al sitio nos encontramos con esta pagina la cual nos hace pensar que debe existir alguna base de datos corriendo por abajo contra la cual se validan los datos de inicio de sesión por lo cual deberíamos verificar la posibilidad de que no este bien programada permitiendo que se acontezca un SQL Injection.
+Al ingresar al sitio nos encontramos con esta página la cual nos hace pensar que debe existir alguna base de datos corriendo por abajo contra la cual se validan los datos de inicio de sesión por lo cual deberíamos verificar la posibilidad de que no esté bien programada permitiendo que se acontezca un SQL Injection.
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/SQLInjection.png)
 
-Al probar con la SQL Injection efectivamente no esta bien sanitizada y logramos obtener acceso:
+Al probar con la SQL Injection efectivamente no está bien sanitizada y logramos obtener acceso:
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Compromiso.png)
 
-Al verificar la información que nos ha devuelto esta pagina vemos un posible usuario Dylan y una contraseña: KJSDFG789FGSDF78
+Al verificar la información que nos ha devuelto esta página vemos un posible usuario Dylan y una contraseña: KJSDFG789FGSDF78
 
 Como teníamos presente desde el escaneo existe un puerto 22 abierto el cual es un servicio SSH por lo cual vamos a probar las credenciales que acabamos de encontrar con suerte y nos podemos conectar
 
@@ -143,7 +143,7 @@ Al verificar nos encontramos que el binario /usr/bin/env tiene permisos SUID y a
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/atributos.png)
 
-Por lo cual procedemos ha realizar la explotación y elevación de privilegios:
+Por lo cual procedemos a realizar la explotación y elevación de privilegios:
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/exploit.png)
 

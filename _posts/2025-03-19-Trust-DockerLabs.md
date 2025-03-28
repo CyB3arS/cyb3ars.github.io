@@ -29,7 +29,7 @@ unzip {{page.machine}}.zip
 - Procedemos a iniciar maquina {{page.machine}} con el siguiente comando:
 
 ```bash
-#Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
+#Con esto damos permisos de ejecución al archivo encargado de desplegarnos la máquina.
 sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
 sudo bash auto_deploy.sh {{page.machine}}.tar
@@ -143,7 +143,7 @@ find / -perm -4000 -user root 2>/dev/null
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Perms.png)
 
-Sin embargo, no tenemos nada que podamos aprovechar, por lo tanto seguimos buscando
+Sin embargo, no tenemos nada que podamos aprovechar, por lo tanto, seguimos buscando
 
 Revisamos Permisos SUDO
 
