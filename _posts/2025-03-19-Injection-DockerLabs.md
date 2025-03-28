@@ -19,20 +19,20 @@ tags: [sql-injection,enumeration,permissions]
 
 ## Pasos Iniciales
 
-- Descargar la maquina {{page.machine}} de [DockerLabs](https://dockerlabs.es/)
+- Descargar la maquina {{page.title}} de [DockerLabs](https://dockerlabs.es/)
 - Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
 
 ```bash
-unzip {{page.machine}}.zip
+unzip {{page.title}}.zip
 ```
 
-- Procedemos a iniciar maquina {{page.machine}} con el siguiente comando:
+- Procedemos a iniciar maquina {{page.title}} con el siguiente comando:
 
 ```bash
 #Con esto damos permisos de ejecución al archivo encargado de desplegarnos la máquina.
 sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
-sudo bash auto_deploy.sh {{page.machine}}.tar
+sudo bash auto_deploy.sh {{page.title}}.tar
 ```
 
 <!-- markdownlint-capture -->
