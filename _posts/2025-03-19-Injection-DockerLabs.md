@@ -3,14 +3,18 @@ title: Injection
 description: Maquina de DockerLabs de dificultad muy facil
 author: cyb3ar
 date: 2025-03-19
-categories: [DockerLabs, VeryEasy]
-tags: [sql-injection,enumeration,permissions]
 pin: true
 math: true
 mermaid: true
 image:
   path: /assets/images/Dockerlabs/VeryEasy/Injection/Banner/Injection.png
   alt: 
+
+machine: Injection
+platform: DockerLabs
+difficult: VeryEasy
+categories: [DockerLabs, VeryEasy]
+tags: [sql-injection,enumeration,permissions]
 ---
 
 ## Pasos Iniciales
@@ -151,4 +155,4 @@ Por lo cual procedemos ha realizar la explotación y elevación de privilegios:
 
 Y con esto hemos terminado la maquinita..
 
-![](/_posts/DK_VE_Injection/Banner.png)
+![](/posts/DK_VE_Injection/Banner.png)
