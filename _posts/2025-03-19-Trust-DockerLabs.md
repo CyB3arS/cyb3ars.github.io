@@ -81,7 +81,7 @@ Al ejecutar el escaneo de puertos podemos ver que la maquina tiene 2 puertos abi
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Primer_Escaneo.png)
 
-Procedemos a analizar los servicios para identificar posibles versiones vulnerables:
+### Identificación de versiones y posibles vulnerabilidades:
 
 ```bash
 nmap -p 22,80 -sVC 172.18.0.2
@@ -104,13 +104,13 @@ feroxbuster --url http://172.17.0.2 -w /usr/share/seclists/Discovery/DNS/subdoma
 ```
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Feroxbuster.png)
 
-Vemos que nos encuentra el archivo index.html:
+Vemos que nos encuentra el archivo index.html
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Index_html.png)
 
-Asi como el archivo secret.php:
+Asi como el archivo secret.php
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Secret.png))
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Secret.png)
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/SecretCodeSource.png)
 
