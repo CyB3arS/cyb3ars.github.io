@@ -77,6 +77,8 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 
 ---------------------------------------------------------------------------------
 
+### Analizando Resultados del Escaneo
+
 Al ejecutarlo podemos ver que la maquina tiene 2 puertos abiertos el 22 y 80 TCP
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap1.png)
@@ -94,6 +96,8 @@ Sin embargo, no hay mas por lo cual tratamos de buscar directorios ocultos usand
 Probamos con Gobuster por aquello
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Gobuster.png)
+
+## Explotación 
 
 Como nos dan una pista "tails" el cual puede ser un usuario y tenemos otro puerto y es SSH podemos forzar para intentar encontrar la contraseña
 
@@ -117,13 +121,20 @@ Y estamos dentro
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Compromiso.png)
 
-revisamos un poco el usuario y no tenemos nada
+## Elevación de Privilegios (Escalada)
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Id.png)
+Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios
 
+```bash
+find / -perm -4000 -user root 2>/dev/null
+```
 Archivos con permisos SUID tampoco tenemos archivos de importancia
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/SUID.png)
+
+Revisamos un poco el usuario y no tenemos nada
+
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Id.png)
 
 Ojito aquí, esto si que es de importancia, tenemos permisos de ejecución de comandos como el usuario sonic
 
@@ -153,4 +164,4 @@ Y listo
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Root2.png)
 
-Y hemos terminado la maquinita...
+Y con esto hemos terminado la maquinita...

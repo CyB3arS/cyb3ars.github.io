@@ -76,6 +76,7 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 ```
 
 ---------------------------------------------------------------------------------------------------------
+### Analizando Resultados del Escaneo
 
 Al ejecutar el escaneo de puertos podemos ver que la maquina tiene 2 puertos abiertos el 22 y el 80
 
@@ -134,7 +135,7 @@ Y efectivamente tenemos acceso al equipo y estamos conectados como Mario.
 
 # Elevación de Privilegios (Escalada)
 
-Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios:
+Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios
 
 ```bash
 find / -perm -4000 -user root 2>/dev/null
