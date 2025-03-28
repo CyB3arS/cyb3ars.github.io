@@ -1,17 +1,17 @@
 ---
-layout: single
 title: Injection
+description: Machine DockerLabs Injection
+author: Cyb3ar
 date: 2025-03-19
-classes: wide
-header:
-  teaser: 
-categories:
-  - DockerLabs
-  - VeryEasy
-tags:
-  - sql-injection
-  - enumeration
-  - permissions
+categories: [DockerLabs, VeryEasy]
+tags: [sql-injection,enumeration,permissions]
+pin: true
+math: true
+mermaid: true
+image:
+  path: /commons/devices-mockup.png
+  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+  alt: Maquinita Injection.
 ---
 
 
