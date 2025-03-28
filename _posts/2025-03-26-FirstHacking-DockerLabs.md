@@ -7,10 +7,10 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/FirtsHacking/Banner.png
+  path: /assets/images/dklabs/ve/firtshacking/Banner.png
   alt: 
 
-machine: FirtsHacking
+machine: firtshacking
 platform: dklabs
 difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
@@ -55,7 +55,7 @@ ping -c 1 172.17.0.2
 
 Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella. 
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}Ping.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Ping.png)
 
 Ahora que sabemos que el equipo este activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
 
