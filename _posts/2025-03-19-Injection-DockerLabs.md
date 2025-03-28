@@ -41,7 +41,7 @@ sudo bash auto_deploy.sh maquina.tar
 
 ----------------------------------------------------------------------------
 
-# Reconocimiento y Enumeración:
+## Reconocimiento y Enumeración:
 
 Para iniciar con esta maquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
 
@@ -73,13 +73,13 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 
 ---------------------------------------------------------------------------------
 
-## Analizando Resultados del Escaneo
+### Analizando Resultados del Escaneo
 
 Al ejecutarlo podemos ver que la maquina tiene 2 puertos abiertos el 22 y el 80
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203958.png)
 
-## Identificación de versiones y posibles vulnerabilidades:
+### Identificación de versiones y posibles vulnerabilidades:
 
 ```bash
 nmap -p 22,80 -sVC 172.17.0.2
@@ -111,7 +111,7 @@ La web a la que nos lleva es la siguiente:
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319205453.png)
 
-# Explotación 
+## Explotación 
 
 Al ingresar al sitio nos encontramos con esta pagina la cual nos hace pensar que debe existir alguna base de datos corriendo por abajo contra la cual se validan los datos de inicio de sesión por lo cual deberíamos verificar la posibilidad de que no este bien programada permitiendo que se acontezca un SQL Injection.
 
@@ -129,7 +129,7 @@ Como teníamos presente desde el escaneo existe un puerto 22 abierto el cual es 
 
 Y efectivamente tenemos acceso al equipo y estamos conectados como Dylan.
 
-# Elevación de Privilegios (Escalada)
+## Elevación de Privilegios (Escalada)
 
 ```bash
 
