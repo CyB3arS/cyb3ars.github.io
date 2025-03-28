@@ -1,0 +1,1 @@
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/
