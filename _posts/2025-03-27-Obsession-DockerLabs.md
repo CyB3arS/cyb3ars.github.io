@@ -91,7 +91,7 @@ nmap -p 22,80 -sVC 172.17.0.2
 
 Encontramos que hay un ftp que tiene acceso anonymous y verificamos con whatweb que otra información podemos encontrar
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Whatweb.png![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Whatweb.png)
 
 Visitamos la web a ver que mas tenemos
 
