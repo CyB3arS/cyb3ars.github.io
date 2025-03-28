@@ -55,7 +55,7 @@ ping -c 1 172.17.0.2
 
 Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella. 
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}Ping.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Ping.png)
 
 Ahora que sabemos que el equipo esta activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
 
