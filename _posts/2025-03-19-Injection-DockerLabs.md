@@ -1,7 +1,7 @@
 ---
 title: Injection
 description: Machine DockerLabs Injection
-author: Cyb3ar
+author: "Cyb3ar"
 date: 2025-03-19
 categories: [DockerLabs, VeryEasy]
 tags: [sql-injection,enumeration,permissions]
@@ -10,13 +10,13 @@ math: true
 mermaid: true
 image:
   path: /assets/images/Dockerlabs/VeryEasy/Injection/Banner/Injection.png
-  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Maquinita Injection.
+  alt: 
 ---
 
+## Pasos Iniciales
 
-Para levantar la maquina debemos bajar la maquina de [DockerLabs - Injection ](https://dockerlabs.es/)
-Posterior a la descarga de la maquina en nuestro equipo debemos correr el siguiente comando:
+1. Descargar la maquina vulnerable de [DockerLabs](https://dockerlabs.es/)
+2. Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
 
 ```bash
 
@@ -26,7 +26,7 @@ unzip injection.zip
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203017.png)
 
-Despues de descomprimir procedemos a levantar nuestra maquina objetivo con el siguiente comando:
+3. Procedemos a levantar nuestra maquina objetivo con el siguiente comando:
 
 ```bash
 #Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
@@ -38,7 +38,16 @@ sudo bash auto_deploy.sh injection.tar
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203405.png)
 
-A partir de este momento ya tenemos nuestra maquina objetivo lista para comenzar a jugar con ella.
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+
+> A partir de este momento ya tenemos nuestra maquina objetivo lista para comenzar a jugar con ella.
+{: .prompt-info }
+
+<!-- markdownlint-restore -->
+
+
 
 # Reconocimiento y Enumeración:
 
