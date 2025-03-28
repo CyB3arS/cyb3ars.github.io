@@ -30,6 +30,7 @@ sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
 sudo bash auto_deploy.sh maquina.tar
 ```
+
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 
@@ -38,7 +39,7 @@ sudo bash auto_deploy.sh maquina.tar
 
 <!-- markdownlint-restore -->
 
------
+----------------------------------------------------------------------------
 
 # Reconocimiento y Enumeración:
 
