@@ -1,7 +1,7 @@
 ---
 title: Injection
-description: Machine DockerLabs Injection
-author: "Cyb3ar"
+description: Maquina de DockerLabs de dificultad muy facil
+author: cyb3ar
 date: 2025-03-19
 categories: [DockerLabs, VeryEasy]
 tags: [sql-injection,enumeration,permissions]
