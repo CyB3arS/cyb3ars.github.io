@@ -53,7 +53,7 @@ Para iniciar con esta maquina debemos verificar conexión con la maquina objetiv
 ping -c 1 172.17.0.2
 ```
 
-Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella, además por el TTL que tiene el cual esta cercano a los 64 podemos pensar que es un equipo Linux, ya que Windows por lo general tiene un TTL cercano a los 128. 
+Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Ping.png)
 

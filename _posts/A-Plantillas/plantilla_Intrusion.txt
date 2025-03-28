@@ -1,0 +1,25 @@
+### Analizando Resultados del Escaneo
+
+
+### Identificación de versiones y posibles vulnerabilidades:
+
+```bash
+nmap -p 22,80 -sVC 172.17.0.2
+```
+
+
+## Explotación 
+
+
+## Elevación de Privilegios (Escalada)
+
+Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios:
+
+```bash
+find / -perm -4000 -user root 2>/dev/null
+```
+
+
+
+
+Y con esto hemos terminado la maquinita..
