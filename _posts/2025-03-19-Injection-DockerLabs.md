@@ -15,30 +15,21 @@ image:
 
 ## Pasos Iniciales
 
-1. Descargar la maquina vulnerable de [DockerLabs](https://dockerlabs.es/)
-2. Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
+- Descargar la maquina vulnerable de [DockerLabs](https://dockerlabs.es/)
+- Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
 
 ```bash
-
 unzip injection.zip
-
 ```
 
-![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203017.png)
-
-3. Procedemos a levantar nuestra maquina objetivo con el siguiente comando:
+- Procedemos a levantar nuestra maquina objetivo con el siguiente comando:
 
 ```bash
 #Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
 sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
-sudo bash auto_deploy.sh injection.tar
-
+sudo bash auto_deploy.sh maquina.tar
 ```
-
-![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203405.png)
-
-
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 
@@ -47,7 +38,7 @@ sudo bash auto_deploy.sh injection.tar
 
 <!-- markdownlint-restore -->
 
-
+-----
 
 # Reconocimiento y Enumeración:
 
