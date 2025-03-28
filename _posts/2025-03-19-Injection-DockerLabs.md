@@ -19,20 +19,20 @@ tags: [sql-injection,enumeration,permissions]
 
 ## Pasos Iniciales
 
-- Descargar la maquina vulnerable de [DockerLabs](https://dockerlabs.es/)
+- Descargar la maquina {{page.machine}} de [DockerLabs](https://dockerlabs.es/)
 - Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
 
 ```bash
-unzip injection.zip
+unzip {{page.machine}}.zip
 ```
 
-- Procedemos a levantar nuestra maquina objetivo con el siguiente comando:
+- Procedemos a iniciar maquina {{page.machine}} con el siguiente comando:
 
 ```bash
 #Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
 sudo chmod +x auto_deploy.sh
 #Levantamos la maquina objetivo
-sudo bash auto_deploy.sh maquina.tar
+sudo bash auto_deploy.sh {{page.machine}}.tar
 ```
 
 <!-- markdownlint-capture -->
@@ -154,5 +154,3 @@ Por lo cual procedemos ha realizar la explotación y elevación de privilegios:
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319213401.png)
 
 Y con esto hemos terminado la maquinita..
-
-![](/posts/DK_VE_Injection/Banner.png)
