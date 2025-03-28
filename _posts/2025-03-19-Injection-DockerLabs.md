@@ -46,9 +46,7 @@ sudo bash auto_deploy.sh maquina.tar
 Para iniciar con esta maquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
 
 ```bash
-
 ping -c 1 172.17.0.2
-
 ```
 
 Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella, además por el TTL que tiene el cual esta cercano a los 64 podemos pensar que es un equipo Linux, ya que Windows por lo general tiene un TTL cercano a los 128. 
@@ -58,15 +56,12 @@ Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia 
 Ahora que sabemos que el equipo esta activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
 
 ```bash
-
 nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 172.17.0.2
-
 ```
 
 Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguiente:
 
 ```bash
-
 -p- Escanea los 65535 puertos existentes
 --open Reporta solo los puertos abiertos
 -sS Realiza un stealth Scan el cual no completa el three-way handshake (SYN / SYN-ACK / RST)
@@ -74,19 +69,20 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 -vvv Permitimos que nos retorne la salida conforme va procesando
 -n Desactivamos resolucion de DNS
 -Pn Desactivamos el HostDiscovery
-
 ```
+
+---------------------------------------------------------------------------------
+
+## Analizando Resultados del Escaneo
 
 Al ejecutarlo podemos ver que la maquina tiene 2 puertos abiertos el 22 y el 80
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319203958.png)
 
-Analizamos los servicios para identificar versiones y posibles vulnerabilidades:
+## Identificación de versiones y posibles vulnerabilidades:
 
 ```bash
-
 nmap -p 22,80 -sVC 172.17.0.2
-
 ```
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319204843.png)
@@ -94,9 +90,7 @@ nmap -p 22,80 -sVC 172.17.0.2
 Con este comando podemos ver que el servicio SSH corre en el puerto 22 con la versión OpenSSH 8.9p1 además confirmamos que el equipo es un Ubuntu Linux y que corre en el puerto 80 un servicio HTTP Apache 2.4.52. Por lo cual podemos usar la herramienta whatweb para extraer un poco de información sobre la misma:
 
 ```bash
-
 whatweb 172.17.0.2
-
 ```
 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319205203.png)
@@ -134,6 +128,7 @@ Como teníamos presente desde el escaneo existe un puerto 22 abierto el cual es 
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319211755.png)
 
 Y efectivamente tenemos acceso al equipo y estamos conectados como Dylan.
+
 # Elevación de Privilegios (Escalada)
 
 ```bash
