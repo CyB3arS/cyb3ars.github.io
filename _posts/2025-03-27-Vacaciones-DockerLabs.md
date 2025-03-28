@@ -7,9 +7,9 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/breakmyssh/Banner.png
+  path: /assets/images/dklabs/ve/Vacaciones/Banner.png
   alt: 
-machine: vacaciones
+machine: Vacaciones
 platform: dklabs
 difficult: ve
 categories:
