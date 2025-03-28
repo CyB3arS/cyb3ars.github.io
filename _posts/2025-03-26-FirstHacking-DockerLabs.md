@@ -83,7 +83,7 @@ Al ejecutarlo podemos ver que la maquina tiene 1 puerto abierto el 21 TCP
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap1.png)
 
-### Identificación de versiones y posibles vulnerabilidades:
+### Identificación de versiones y posibles vulnerabilidades
 
 ```bash
 nmap -p 22,80 -sVC 172.17.0.2

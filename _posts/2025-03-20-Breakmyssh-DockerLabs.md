@@ -77,85 +77,77 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 
 ---------------------------------------------------------------------------------
 
-Al ejecutarlo podemos ver que la maquina tiene 1 puerto abierto el 22 TCP
+Podemos ver que la maquina tiene 1 puerto abierto el 22 TCP
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320180434.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap1.png)
 
-Analizamos los servicios para identificar versiones y posibles vulnerabilidades:
+### Identificación de versiones y posibles vulnerabilidades
 
 ```bash
-
-nmap -p 22 -sVC 172.18.0.2
-
+nmap -p 22,80 -sVC 172.17.0.2
 ```
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320180537.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap2.png)
 
-Con este comando podemos ver que el servicio SSH corre en el puerto 22 con la versión OpenSSH 7.7 además confirmamos que el equipo es Linux
+Temenos el servicio SSH corriendo en el puerto 22 con la versión OpenSSH 7.7, validamos si existen exploit para esa versión de SSH con searchsploit.
 
-Validamos si existen exploit para esa versión de SSH con searchsploit.
-
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320190706.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Searchsploit.png)
 
 Sin embargo en lo personal utilice otro recurso para lograr enumerar usuarios.
 
 [GitHub - CVE-2018-15473](https://github.com/Sait-Nuri/CVE-2018-15473)
 
-# Fuzzing
+## Fuzzing
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320185940.png)
-encontramos el usuario lovely es valido.
-# Explotación 
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Fuzzing.png)
+
+Encontramos el usuario lovely.
+
+## Explotación 
 
 Ahora como conocemos un usuario (lovely y por general existe un usuario root) vamos a probar con fuerza bruta conseguir la contraseña de los usuarios para conectarnos al servicio SSH. Para ello usaremos hydra con el siguiente comando:
 
 ```bash
-
 hydra -l lovely -P /usr/share/wordlists/rockyou.txt ssh://172.17.0.2
 hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://172.17.0.2
-
 ```
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320191910.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/hydra1.png)
 
 Hemos encontrado ambas contraseñas lovely:rockyou y root:estrella con la cual nos podemos conectar por ssh al usuario de root.
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320194029.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Lovely.png)
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320193951.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Root.png)
 
 Y con esto hemos terminado la maquinita..
 
-Si solo hubiéramos encontrado lovely y tuviéramos que realizar la Escalada.. vemos que existe este script que permite cambiar la contraseña de root pero no tenemos permisos para ejecutarlo. 
+## Otra Posible Escalada
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320194711.png)
-
-Pero al buscar en el directorio opt nos damos cuenta que existe un archivo .hash
+Si solo hubiéramos encontrado lovely y tuviéramos que realizar la Escalada en el directorio opt nos damos cuenta que existe un archivo .hash
 
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320195249.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/hash.png)
 
 en el cual nos encontramos el siguiente hash
 
 ```text
-
 aa87ddc5b4c24406d26ddad771ef44b0
-
 ```
 
-lo traemos a nuestra maquina atacante y podemos usar Hashcat para identificar el tipo y hash y crackearlo
+Si lo traemos a nuestra maquina atacante y podemos usar Hashcat para identificar el tipo y hash y crackearlo
 le pasamos el hash a hashid y nos indica que pude ser cualquier de estos tipos pero intuyendo probamos con md5
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320200020.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Hashid.png)
 
 ```bash 
-
 hashcat -m 0 hash /usr/share/wordlists/rockyou.txt
-
 ```
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320200715.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Hashcat.png)
 
 Y contraseña crackeada.
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250320200735.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Cracked.png)
+
+Y con esto hemos terminado la maquinita...
