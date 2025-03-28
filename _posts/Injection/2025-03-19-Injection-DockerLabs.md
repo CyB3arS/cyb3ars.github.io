@@ -41,7 +41,7 @@ sudo bash auto_deploy.sh maquina.tar
 
 ----------------------------------------------------------------------------
 
-## Reconocimiento y Enumeración:
+## Reconocimiento y Enumeración
 
 Para iniciar con esta maquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
 
@@ -150,3 +150,5 @@ Por lo cual procedemos ha realizar la explotación y elevación de privilegios:
 ![](/assets/images/Dockerlabs/VeryEasy/Injection/Pasted image 20250319213401.png)
 
 Y con esto hemos terminado la maquinita..
+
+![](/Banner.png)
