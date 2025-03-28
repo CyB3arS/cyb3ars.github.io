@@ -112,7 +112,7 @@ Antes de continuar buscamos directorios ocultos u archivos pero no hay nada
 
 Por lo que le pasamos la información de los usuarios a hydra y procedemos a hacer un ataque de fuerza bruta al ssh utilizando los usuarios camilo y juan encontrando las credenciales de camilo y nos conectamos con SSH
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250326115903.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Hydra.png)
 
 Y nos conectamos
 
@@ -131,7 +131,7 @@ find / -perm -4000 -user root 2>/dev/null
 
 Tambien verificamos si tenemos permisos para ejecutar algún binario como sudo pero no
 
-![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250326120447.png)
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Perms.png)
 
 Como el usuario menciono en la web que le había dejado un correo importante a Camilo no dirigimos al directorio /var/mail/camilo y nos encontramos con el correo que nos dejo Juan
 
