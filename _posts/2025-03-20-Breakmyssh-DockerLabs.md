@@ -89,11 +89,11 @@ nmap -p 22,80 -sVC 172.17.0.2
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap2.png)
 
-Temenos el servicio SSH corriendo en el puerto 22 con la versión OpenSSH 7.7, validamos si existen exploit para esa versión de SSH con searchsploit.
+Tenemos el servicio SSH corriendo en el puerto 22 con la versión OpenSSH 7.7, validamos si existen exploit para esa versión de SSH con searchsploit.
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Searchsploit.png)
 
-Sin embargo en lo personal utilice otro recurso para lograr enumerar usuarios.
+Sin embargo, en lo personal utilice otro recurso para lograr enumerar usuarios.
 
 [GitHub - CVE-2018-15473](https://github.com/Sait-Nuri/CVE-2018-15473)
 
@@ -120,12 +120,11 @@ Hemos encontrado ambas contraseñas lovely:rockyou y root:estrella con la cual n
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Root.png)
 
-Y con esto hemos terminado la maquinita..
+Y con esto hemos terminado la maquinita.
 
 ## Otra Posible Escalada
 
 Si solo hubiéramos encontrado lovely y tuviéramos que realizar la Escalada en el directorio opt nos damos cuenta que existe un archivo .hash
-
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/hash.png)
 
@@ -136,7 +135,7 @@ aa87ddc5b4c24406d26ddad771ef44b0
 ```
 
 Si lo traemos a nuestra maquina atacante y podemos usar Hashcat para identificar el tipo y hash y crackearlo
-le pasamos el hash a hashid y nos indica que pude ser cualquier de estos tipos pero intuyendo probamos con md5
+le pasamos el hash a hashid y nos indica que pude ser cualquier de estos tipos, pero intuyendo probamos con md5
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Hashid.png)
 
@@ -146,7 +145,7 @@ hashcat -m 0 hash /usr/share/wordlists/rockyou.txt
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Hashcat.png)
 
-Y contraseña crackeada.
+Y tenemos la contraseña.
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Cracked.png)
 
