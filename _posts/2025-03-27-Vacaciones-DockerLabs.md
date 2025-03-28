@@ -87,6 +87,7 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 Al ejecutar el escaneo podemos ver que la maquina tiene 2 puertos abiertos el 22 y 80 TCP
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap1.png)
+
 ### Identificación de versiones y posibles vulnerabilidades
 
 ```bash
@@ -108,6 +109,7 @@ Al revisar el código fuente vemos que hay 2 posibles usuarios, Juan y Camilo
 Antes de continuar buscamos directorios ocultos u archivos pero no hay nada
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Feroxbuster.png)
+
 ## Explotación 
 
 Por lo que le pasamos la información de los usuarios a hydra y procedemos a hacer un ataque de fuerza bruta al ssh utilizando los usuarios camilo y juan encontrando las credenciales de camilo y nos conectamos con SSH
@@ -121,6 +123,7 @@ Y nos conectamos
 Ahora que nos logramos conectar verificamos que otros usuarios hay con acceso a una sh o una bash y encontramos 4 usuarios
 
 ![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Users.png)
+
 ## Elevación de Privilegios (Escalada)
 
 Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios
