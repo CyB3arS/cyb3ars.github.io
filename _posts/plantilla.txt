@@ -1,0 +1,90 @@
+---
+title: Injection
+description:
+author: cyb3ar
+date: 2025-03-19
+pin: true
+math: true
+mermaid: true
+image:
+  path: /assets/images/dklabs/ve/Injection/Banner.png
+  alt: 
+
+machine: Injection
+platform: dklabs
+difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
+categories: [DockerLabs, VeryEasy]
+tags: [sql-injection,enumeration,permissions]
+---
+
+## Pasos Iniciales
+
+- Descargar la maquina {{page.machine}} de [DockerLabs](https://dockerlabs.es/)
+- Teniendo la maquina en nuestro equipo debemos correr el siguiente comando para descomprimirla:
+
+```bash
+unzip {{page.machine}}.zip
+```
+
+- Procedemos a iniciar maquina {{page.machine}} con el siguiente comando:
+
+```bash
+#Con esto damos permisos de ejecucion al archivo encargado de desplegarnos la maquina.
+sudo chmod +x auto_deploy.sh
+#Levantamos la maquina objetivo
+sudo bash auto_deploy.sh {{page.machine}}.tar
+```
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+
+> A partir de este momento ya tenemos nuestra maquina objetivo lista para comenzar a jugar con ella.
+{: .prompt-info }
+
+<!-- markdownlint-restore -->
+
+----------------------------------------------------------------------------
+
+## Reconocimiento y Enumeración
+
+Para iniciar con esta maquina debemos verificar conexión con la maquina objetivo. Para ello le lanzamos el comando ping:
+
+```bash
+ping -c 1 172.17.0.2
+```
+
+Con este comando podemos ver que la maquina esta activa y tenemos alcance hacia ella, además por el TTL que tiene el cual esta cercano a los 64 podemos pensar que es un equipo Linux, ya que Windows por lo general tiene un TTL cercano a los 128. 
+
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250319203547.png)
+
+Ahora que sabemos que el equipo esta activo procedemos a realizar un escaneo de puertos, servicios y versiones utilizando la herramienta Nmap.
+
+```bash
+nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 172.17.0.2
+```
+
+Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguiente:
+
+```bash
+-p- Escanea los 65535 puertos existentes
+--open Reporta solo los puertos abiertos
+-sS Realiza un stealth Scan el cual no completa el three-way handshake (SYN / SYN-ACK / RST)
+--min-rate 5000 Procesa no menos de 5000 paquetes por segundo
+-vvv Permitimos que nos retorne la salida conforme va procesando
+-n Desactivamos resolucion de DNS
+-Pn Desactivamos el HostDiscovery
+```
+
+---------------------------------------------------------------------------------
+
+### Analizando Resultados del Escaneo
+
+
+## Explotación 
+
+
+## Elevación de Privilegios (Escalada)
+
+
+
+Y con esto hemos terminado la maquinita..
