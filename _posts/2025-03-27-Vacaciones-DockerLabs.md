@@ -90,41 +90,41 @@ Este comando al ejecutarlo con estos parámetros le estamos indicando lo siguien
 
 Al ejecutar el escaneo podemos ver que la maquina tiene 2 puertos abiertos el 22 y 80 TCP
 
-![[Nmap1.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap1.png)
 ### Identificación de versiones y posibles vulnerabilidades
 
 ```bash
 nmap -p 22,80 -sVC 172.17.0.2
 ```
 
-![[Nmap2.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Nmap2.png)
 
 Como tenemos un servicio Web nos dirigimos a verificar que tenemos, pero no vemos nada, por ello revisamos el código fuente en búsqueda de comentarios o algo que nos sea de utilidad
 
-![[Web.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Web.png)
 
 Al revisar el código fuente vemos que hay 2 posibles usuarios, Juan y Camilo
 
-![[Source_code.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Source_code.png)
 
 ## Fuzzing de Directorios y Archivos
 
 Antes de continuar buscamos directorios ocultos u archivos pero no hay nada
 
-![[Feroxbuster.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Feroxbuster.png)
 ## Explotación 
 
 Por lo que le pasamos la información de los usuarios a hydra y procedemos a hacer un ataque de fuerza bruta al ssh utilizando los usuarios camilo y juan encontrando las credenciales de camilo y nos conectamos con SSH
 
-![[Pasted image 20250326115903.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250326115903.png)
 
 Y nos conectamos
 
-![[Camilo.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Camilo.png)
 
 Ahora que nos logramos conectar verificamos que otros usuarios hay con acceso a una sh o una bash y encontramos 4 usuarios
 
-![[Users.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Users.png)
 ## Elevación de Privilegios (Escalada)
 
 Comenzamos buscando todos aquellos binarios con permisos SUID de los cuales podemos aprovecharnos para elevar nuestros privilegios
@@ -135,23 +135,23 @@ find / -perm -4000 -user root 2>/dev/null
 
 Tambien verificamos si tenemos permisos para ejecutar algún binario como sudo pero no
 
-![[Pasted image 20250326120447.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Pasted image 20250326120447.png)
 
 Como el usuario menciono en la web que le había dejado un correo importante a Camilo no dirigimos al directorio /var/mail/camilo y nos encontramos con el correo que nos dejo Juan
 
-![[Correo.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Correo.png)
 
 Y Juan nos dejo una contraseña con lo cual nos podemos migrar al usuario de Juan
 
-![[Juan.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Juan.png)
 
 Revisamos los permisos que tenia Juan para ejecutar binarios privilegiados y Oh Sorpresa..
 
-![[Permisos.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Permisos.png)
 
 Juan estas despedido... tiene permisos para ejecutar ruby como cualquier usuario y en este caso como root que es el que nos interesa entonces procedemos a elevar nuestros privilegios
 
-![[Root.png]]
+![](/assets/images/{{page.platform}}/{{page.difficult}}/{{page.machine}}/Root.png)
 
 Y con esto hemos terminado la maquinita...
 
