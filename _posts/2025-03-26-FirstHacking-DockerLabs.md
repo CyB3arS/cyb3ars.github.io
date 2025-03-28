@@ -7,7 +7,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/FirtsHacking/Banner.png
+  path: /assets/images/dklabs/ve/FirstHacking/Banner.png
   alt: 
 
 machine: FirstHacking
