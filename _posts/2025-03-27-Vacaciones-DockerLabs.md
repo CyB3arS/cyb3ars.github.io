@@ -17,13 +17,9 @@ categories:
   - VeryEasy
 tags:
   - enumeration
-  - SSH
-  - Brute
-  - Force
+  - SSH Brute Force
   - CVE
-  - Fuzzing
-  - SSH
-  - Users
+  - Fuzzing SSH Users
 ---
 
 ## Pasos Iniciales
