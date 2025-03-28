@@ -7,12 +7,12 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/Dockerlabs/VeryEasy/Injection/Banner/Injection.png
+  path: /assets/images/dklabs/ve/Injection/Banner.png
   alt: 
 
 machine: Injection
-platform: DockerLabs
-difficult: VeryEasy
+platform: dklabs
+difficult: ve
 categories: [DockerLabs, VeryEasy]
 tags: [sql-injection,enumeration,permissions]
 ---
