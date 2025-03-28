@@ -148,7 +148,9 @@ pwa:
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+      - "/assets/" # Evita que los archivos en assets se almacenen en caché
+      - "/posts/" # Evita que los posts se almacenen en caché
+        # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
