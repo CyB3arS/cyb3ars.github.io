@@ -1,6 +1,6 @@
 ---
 title: Injection
-description: Maquina de DockerLabs de dificultad muy facil
+description:
 author: cyb3ar
 date: 2025-03-19
 pin: true
@@ -12,7 +12,7 @@ image:
 
 machine: Injection
 platform: dklabs
-difficult: ve
+difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
 tags: [sql-injection,enumeration,permissions]
 ---
