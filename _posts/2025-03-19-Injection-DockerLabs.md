@@ -152,4 +152,4 @@ Por lo cual procedemos ha realizar la explotación y elevación de privilegios:
 Y con esto hemos terminado la maquinita..
 
 
-![](/Injection/Banner.png)
+![](Injection/Banner.png)
