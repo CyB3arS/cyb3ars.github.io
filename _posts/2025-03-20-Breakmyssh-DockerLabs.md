@@ -2,7 +2,7 @@
 title: BreakmySSH
 description:
 author: cyb3ar
-date: 2025-03-26
+date: 2025-03-20
 pin: true
 math: true
 mermaid: true
