@@ -2,10 +2,9 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+title: Acerca de
 description: "Writeups, análisis y seguridad ofensiva"
 ---
-
-## Sobre mí
 
 Soy Ingeniero en Sistemas con más de 10 años de experiencia en desarrollo de software, administración de bases de datos Oracle y ciberseguridad. Actualmente, finalizo una Maestría en Ciberseguridad, fortaleciendo mis conocimientos en análisis de amenazas, protección de infraestructuras críticas y estrategias de prevención de ataques.
 
