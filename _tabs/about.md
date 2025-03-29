@@ -13,12 +13,10 @@ Me especializo en la creación de soluciones empresariales eficientes, desde apl
 ## Experiencia
 
 - Más de 10 años en desarrollo de software, administración de bases de datos Oracle y ciberseguridad.
-
 - Especialista en Oracle APEX, Oracle Forms, .NET, Swift (iOS), Android, PHP y JavaScript.
-
 - Administración y optimización de bases de datos Oracle, desarrollo de automatizaciones y sistemas de monitoreo.
-
 - Implementación de mejoras en ciberseguridad, protección de datos y rastreo GPS en tiempo real.
+- Auditorias de Seguridad Informática Internas y Pentest
 
 ## Certificaciones
 
