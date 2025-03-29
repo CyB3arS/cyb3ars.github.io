@@ -1,19 +1,19 @@
-- title: Inicio # Antes: HOME
+- title: Inicio
   icon: fas fa-home
   url: /
 
-- title: Blog # Antes: CATEGORIES
+- title: Blog
   icon: fas fa-folder
   url: /categories/
 
-- title: Etiquetas # Antes: TAGS
+- title: Etiquetas
   icon: fas fa-tags
   url: /tags/
 
-- title: Archivo # Antes: ARCHIVES
+- title: Archivo
   icon: fas fa-archive
   url: /archives/
 
-- title: Sobre mí # Antes: ABOUT
+- title: Sobre mí
   icon: fas fa-user
   url: /about/
