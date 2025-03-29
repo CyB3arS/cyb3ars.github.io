@@ -172,8 +172,6 @@ collections:
   tabs:
     output: true
     sort_by: order
-  blog:
-    output: true
 
 defaults:
   - scope:
