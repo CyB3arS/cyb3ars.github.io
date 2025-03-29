@@ -56,20 +56,6 @@ webmaster_verifications:
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-navbar:
-  pinned: true
-  pages:
-    - name: Home
-      url: /
-    - name: Categorias
-      url: /categories/
-    - name: Tags
-      url: /tags/
-    - name: Historia
-      url: /archives/
-    - name: Acerca de
-      url: /about/
-
 # Web Analytics Settings
 analytics:
   google:
