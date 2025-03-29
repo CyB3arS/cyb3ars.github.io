@@ -1,19 +1,24 @@
 - title: Inicio
   icon: fas fa-home
   url: /
+  order: 1
 
 - title: Blog
   icon: fas fa-folder
   url: /categories/
+  order: 2
 
 - title: Etiquetas
   icon: fas fa-tags
   url: /tags/
+  order: 3
 
 - title: Archivo
   icon: fas fa-archive
   url: /archives/
+  order: 4
 
 - title: Sobre mí
   icon: fas fa-user
   url: /about/
+  order: 5
