@@ -32,17 +32,29 @@ Me especializo en la creación de soluciones empresariales eficientes, desde apl
 
 ## Educación
 
-- **Maestría en Ciberseguridad** *(En curso)*
+- **Maestría en Ciberseguridad** - Universidad Internacional de La Rioja *(En curso)*
 - **Licenciatura en Ingeniería de Sistemas Informáticos** - Universidad Latina de Costa Rica *(2012 - 2014)*
 - **CCNA** - Universidad de Costa Rica *(2012 - 2013)*
 - **Bachiller en Ingeniería de Sistemas Informáticos** - Universidad Latina de Costa Rica *(2008 - 2011)*
 
 ## Certificaciones
 
-- Curso de Programación en Python - Networking Academy Learn-A-Thon *(2024)*
-- Oracle Cloud Infrastructure Foundations 2021 Certified Associate
-- Scrum Master
-- ISC2 Candidate
+- Curso de Programación en Python - UNIR - Universidad Internacional de La Rioja *(2024)*
+- Curso de Preparación para la Certificación AZ900: Microsoft Azure Fundamentals - UNIR *(2024)*
+- Networking Academy Learn-A-Thon *(2024)*
+- Continuing Education Certificate in Leadership - MIU City University Miami *(2023)*
+- Oracle Cloud Data Management 2022 Foundations Certified Associate *(2022)*
+- Oracle Cloud Infrastructure Foundations 2021 Certified Associate *(2022)*
+- Scrum Master *(2022)*
+
+## Certificaciones en Progreso
+
+- ISC2 Candidate - ISC2 CC *(En Curso)*
+- CRTA - Red Team Analyst *(En Curso)*
+- CPTS - HTB Certified Penetration Testing Specialist *(En Curso)*
+- OSCP *(En Curso)*
+- Oracle Database SQL Certified Associate *(En Curso)*
+- Oracle Advanced PL/SQL Developer Certified Professionals *(En Curso)*
 
 ## Contacto
 
