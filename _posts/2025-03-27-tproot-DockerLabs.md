@@ -14,7 +14,7 @@ machine: tproot
 platform: dklabs
 difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
-tags: [enumeration,CVE]
+temas: [enumeration,CVE]
 ---
 
 ## Pasos Iniciales

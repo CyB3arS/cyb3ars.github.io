@@ -14,7 +14,7 @@ machine: Trust
 platform: dklabs
 difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
-tags: [Fuzzing,Web,enumeration,SSH Brute Force]
+temas: [Fuzzing,Web,enumeration,SSH Brute Force]
 ---
 
 ## Pasos Iniciales

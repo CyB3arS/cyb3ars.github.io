@@ -14,7 +14,7 @@ machine: Injection
 platform: dklabs
 difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
-tags: [sql-injection,enumeration,permissions]
+temas: [sql-injection,enumeration,permissions]
 ---
 
 ## Pasos Iniciales
