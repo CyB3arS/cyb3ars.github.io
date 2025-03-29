@@ -14,7 +14,7 @@ machine: HedgeHog
 platform: dklabs
 difficult: ve #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, VeryEasy]
-temas: [enumeration,SSH Brute Force]
+tags: [enumeration,SSH Brute Force]
 ---
 
 ## Pasos Iniciales

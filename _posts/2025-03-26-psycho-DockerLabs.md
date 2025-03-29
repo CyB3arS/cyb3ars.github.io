@@ -14,7 +14,7 @@ machine: psycho
 platform: dklabs
 difficult: e #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, Easy]
-temas: [Fuzzing Web Parameters,SSH PrivateKey,enumeration,Perl,Python3]
+tags: [Fuzzing Web Parameters,SSH PrivateKey,enumeration,Perl,Python3]
 ---
 
 ## Pasos Iniciales

@@ -15,7 +15,7 @@ difficult: ve
 categories:
   - DockerLabs
   - VeryEasy
-temas:
+tags:
   - enumeration
   - SSH Brute Force
   - CVE
