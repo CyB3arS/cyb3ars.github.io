@@ -7,10 +7,10 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/Psycho/Banner.png
+  path: /assets/images/dklabs/ve/psycho/Banner.png
   alt: 
 
-machine: Psycho
+machine: psycho
 platform: dklabs
 difficult: e #ve VeryEase, e Easy, m Medium, h hard, vh veryhard, i insane
 categories: [DockerLabs, Easy]
