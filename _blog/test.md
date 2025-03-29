@@ -12,8 +12,8 @@ image:
 
 #categoriesBlog: [DockerLabs, VeryEasy]
 #tagsBlog: [sql-injection,enumeration,permissions]
-tag: 
-categories: 
+tag: [blog]
+categories: [blog]
 ---
 
 Hola
