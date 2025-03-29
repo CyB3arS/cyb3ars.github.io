@@ -7,7 +7,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/dklabs/ve/psycho/Banner.png
+  path: /assets/images/dklabs/e/psycho/Banner.png
   alt: 
 
 machine: psycho
