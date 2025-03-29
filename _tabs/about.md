@@ -12,29 +12,13 @@ Me especializo en la creación de soluciones empresariales eficientes, desde apl
 
 ## Experiencia
 
-### **GBSYS**
-**Programador de Sistemas de Información** (Agosto 2022 - Presente)  
-- Desarrollo y optimización de sistemas de gestión en Oracle APEX y Oracle Forms 11g.
-- Automatización de procesos de carga de datos para mejorar la productividad.
-- Implementación de mejoras en ciberseguridad para fortalecer la protección de datos.
+- Más de 10 años en desarrollo de software, administración de bases de datos Oracle y ciberseguridad.
 
-### **Central Azucarera Tempisque S.A. (CATSA)**
-**Analista Programador** (Julio 2018 - Agosto 2022)  
-**Analista Programador** (Diciembre 2012 - Enero 2017)  
-- Desarrollo de aplicaciones en .NET, Swift (iOS), HTML, JavaScript, Android, Oracle APEX y PHP.
-- Administración de bases de datos Oracle 11g y desarrollo en Oracle Forms y Reports 11g.
-- Implementación de un sistema de rastreo GPS con monitoreo en tiempo real.
+- Especialista en Oracle APEX, Oracle Forms, .NET, Swift (iOS), Android, PHP y JavaScript.
 
-### **Supermercados Luperon S.A.**
-**Analista Programador** (Agosto 2011 - Diciembre 2012)  
-- Desarrollo en VB.NET y SQL Server.
+- Administración y optimización de bases de datos Oracle, desarrollo de automatizaciones y sistemas de monitoreo.
 
-## Educación
-
-- **Maestría en Ciberseguridad** - Universidad Internacional de La Rioja *(En curso)*
-- **Licenciatura en Ingeniería de Sistemas Informáticos** - Universidad Latina de Costa Rica *(2012 - 2014)*
-- **CCNA** - Universidad de Costa Rica *(2012 - 2013)*
-- **Bachiller en Ingeniería de Sistemas Informáticos** - Universidad Latina de Costa Rica *(2008 - 2011)*
+- Implementación de mejoras en ciberseguridad, protección de datos y rastreo GPS en tiempo real.
 
 ## Certificaciones
 
