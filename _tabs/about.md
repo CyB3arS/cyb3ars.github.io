@@ -2,7 +2,6 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
-title: "Acerca de"
 description: "Writeups, análisis y seguridad ofensiva"
 ---
 
@@ -47,6 +46,6 @@ Me especializo en la creación de soluciones empresariales eficientes, desde apl
 
 ## Contacto
 
-📍 **Ubicación:** Palmira, Carrillo, Costa Rica  
-📧 **Email:** [carlos8057@me.com](mailto:carlos8057@me.com)  
+📍 **Ubicación:** Costa Rica  
+📧 **Email:** [hack.cyb3ar@icloud.com](mailto:hack.cyb3ar@icloud.com)  
 🔗 **LinkedIn:** [linkedin.com/in/caosorno](https://www.linkedin.com/in/caosorno)
